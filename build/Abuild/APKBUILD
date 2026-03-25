@@ -3,7 +3,7 @@
 # Maintainer: Felix Xing <fxing@qnx.com>
 pkgname=tinyxml2
 pkgver=11.0.0
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Simple, small and efficient C++ XML parser"
 url="https://github.com/leethomason/tinyxml2"
 arch="all"
@@ -30,7 +30,6 @@ package() {
 	DESTDIR="$pkgdir" meson install --no-rebuild -C output
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 8a6ddd48c96bc4287437d5b5ca62c131c4416c57310b664c9088ca9c1ac9f4d43d16c1bad03f82dc5588d9486752f510d631609a3930f1d4243f12184ad1c5f9  tinyxml2-11.0.0.tar.gz
 "
